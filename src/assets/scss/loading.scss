@@ -1,0 +1,46 @@
+@import './animation';
+
+.box {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    .hotel,
+    .road {
+        font-size: 4em;
+        color: white;
+    }
+
+    .inner {
+        width: 400px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        color: white;
+        transform-origin: right;
+        transform: rotateY(15deg);
+
+        span {
+            position: absolute;
+        
+            &.plane {
+                animation: loading 2.8s linear infinite;
+                animation-delay: 0.5s;
+                left: -100%;
+            }
+        }
+    }
+}

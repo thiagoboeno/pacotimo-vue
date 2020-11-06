@@ -1,0 +1,44 @@
+.form-box {
+    background-color: #4b5195;
+    padding: 40px 0;
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 4.6rem;
+        margin-top: 0;
+    }
+    
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+
+        input {
+            height: 36px;
+            outline: none;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            outline: none;
+            position: relative;
+            border: 4px double #fff;
+            color: #fff;
+            background: transparent;
+            transition: none;
+            
+            &:hover {
+                color: #4b5195;
+                background: #fff;
+            }
+        }
+    }
+}

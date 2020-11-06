@@ -1,0 +1,130 @@
+.cards-list {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+
+        .card-box {
+            .card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px -6px #000000;
+
+                &:hover {
+                    .card-data {
+                        transform: translateY(0);
+                    }
+                }
+
+                .card-img,
+                .card-img img {
+                    width: 100%;
+                    height: 100%;
+                    min-height: 270px;
+                }
+        
+                .card-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 20px 10px;
+                    background: rgba(#000000, 0.7);
+                    text-indent: 5px;
+        
+                    .place span {
+                        display: block;
+                        text-align: left;
+                        color: white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+        
+                    .departure span {
+                        display: block;
+                        text-align: right;
+                        color: white;
+        
+                        &:last-child {
+                            letter-spacing: 2px;
+                        }
+                    }
+        
+                    .arrival span {
+                        display: block;
+                        text-align: right;
+                        color: white;
+        
+                        &:last-child {
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+
+                .card-data {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: white;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                    z-index: 1;
+                    transition: all 1s;
+                    transform: translateY(100%);
+
+                    .hotel,
+                    .flight {
+                        span {
+                            display: block;
+                            text-align: left;
+                            color: black;
+                            font-size: 2rem;;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cards-all {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
+            padding: 25px 80px;
+            display: inline-block;
+            margin: 40px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            outline: none;
+            position: relative;
+            border: 4px double #226fbe;
+            border-radius: 60px;
+            color: #fff;
+            background: #226fbe;
+            transition: none;
+            
+            &:hover {
+                background: transparent;
+                color: #226fbe;
+            }
+        }
+    }
+}
