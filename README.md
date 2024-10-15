@@ -1,43 +1,37 @@
-# Notas de desenvolvimento da aplicação
-Este repositório trata-se de um teste técnico feito entre os dias 03/11/2020 à 06/11/2020 para a empresa 123Milhas, onde foi desenvolvido uma aplicação em JavaScript com Vue JS, capaz de montar, listar e filtrar os pacotes, os dados são recebidos pela api fornecida pela empresa.
+# Pacotimo
 
-## Ferramentas e libs:
-    - VueJs(v2.6.11)
-    - Vuex
-    - FontAwesome
-    - Axios
-    - SCSS
-    - Css Grid
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-## Configuração de projeto
-### Pré-requisitos
-* [NodeJs](https://nodejs.org/en/)
-* Gerenciador de pacote ([npm](https://www.npmjs.com/get-npm) ou [yarn](https://classic.yarnpkg.com/pt-BR/docs/install))
+### Teste técnico realizado em Novembro de 2020, com intuito de ingressar em uma vaga na empresa 123Milhas
+### A aplicação desenvolvida tem como intuito montar, listar e filtrar os pacotes com base nos dados fornecida pela api gerenciada pela empresa.
 
-## Baixando as dependencias
-```
-npm install
-```
-ou
-```
-yarn
-```
+#### Informações Adicionais:
+- VueJs 2.6.11
+- Font Awesome
+- Axios
+- SCSS
+- Css Grid
 
-### Executando/compilando o projeto
-```
-npm serve
-```
-ou
-```
-yarn serve
-```
+## Instalação
 
-### Executando/compilando o projeto e minificando para produção
-```
-npm serve
-```
-ou
-```
-yarn build
-```
+Tenha o [Node.js](https://nodejs.org/en/) e o [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/) instalados.
+
+Com os demais instalados, as dependencias do `package.json` precisam ser instaladas a partir do commando:
+
+``` bash
+# instalando as dependências
+$ npm install
+# or use
+$ yarn
+
+# Executando/compilando o projeto (localhost:8080)
+$ npm run dev
+# or use
+$ yarn serve
+
+# Buildando o projeto e minificando para produção
+$ npm run build
+# or use
+$ yarn build
 
